@@ -6,9 +6,9 @@ const main = require("./src/config/db") ;
 app.use(express.json()) ;
 
 // Importing Routers
-const formRouter = require("./src/routes/form_route") ;
+const airtableWebhookRouter = require("./src/routes/airtable_webhook");
 
-app.use("/form" , formRouter) ;
+app.use("/", airtableWebhookRouter);
 
 
 const initializeConnection = async ()=>{
