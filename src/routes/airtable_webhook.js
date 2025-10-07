@@ -8,6 +8,7 @@ const Demo_Scheduling = require("../models/demo_scheduling_form");
 const Meeting_Links = require("../models/meeting_links");
 const Onboarding = require("../models/onboarding_form");
 const Teacher = require("../models/teacher");
+const Old_Collection = require("../models/old_collection_form") ;
 
 const models = {
     after_sales_form: After_Sales,
@@ -16,7 +17,8 @@ const models = {
     demo_scheduling_form: Demo_Scheduling,
     meeting_links: Meeting_Links,
     onboarding_form: Onboarding,
-    teacher: Teacher
+    teacher: Teacher ,
+    old_collection_form: Old_Collection
 };
 
 router.post("/airtable-webhook", async (req, res) => {
